@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from inputs import devices
 from inputs import get_gamepad
 import rospy
