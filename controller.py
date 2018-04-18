@@ -16,7 +16,7 @@ def main():
     for event in events:
       print(event.code, event.state)
       if event.code =='ABS_X':
-        msg.steer_angle = event.state/32786.0*30.0
+        msg.steer_angle = -event.state/32786.0*30.0
       if event.code =='ABS_RZ':
         msg.power = event.state/255.0
       elif event.code == 'ABS_Z':
